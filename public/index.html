@@ -1,0 +1,25 @@
+Set-Content -Path "public\index.html" -Value @"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Chamber: The Algorithm Breaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="video-container">
+        <div id="player"></div>
+        <div id="choice-overlay" class="hidden">
+            <h2 id="choice-text">What will you do?</h2>
+            <div id="buttons">
+                <button id="btn-1" class="choice-btn"></button>
+                <button id="btn-2" class="choice-btn"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+"@
